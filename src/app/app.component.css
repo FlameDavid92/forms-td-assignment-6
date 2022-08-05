@@ -1,0 +1,22 @@
+div.container {
+  margin-top: 1.5em;
+}
+.error-container {
+  min-height: 5em;
+}
+
+div.error-container > p:first-child {
+  color: red;
+  border: 0.2em dotted red;
+  padding: 1em;
+}
+
+.help-text {
+  min-height: 1.5em;
+  color: red;
+  margin-bottom: 0.5em;
+}
+
+button.btn {
+  margin-top: 0.5em;
+}

@@ -30,7 +30,7 @@
             #email="ngModel"
           />
           <div class="help-text">
-            <p *ngIf="email.invalid && email.dirty">
+            <p *ngIf="!email.valid && email.dirty">
               Please insert a valid email!
             </p>
           </div>
@@ -57,11 +57,11 @@
             #password="ngModel"
           />
           <div class="help-text">
-            <p *ngIf="password.invalid && password.dirty">
+            <p *ngIf="!password.valid && password.dirty">
               Please insert a valid password!
             </p>
           </div>
-          <button type="submit" class="btn btn-primary" [disabled]="f.invalid">
+          <button type="submit" class="btn btn-primary" [disabled]="!f.valid">
             Submit
           </button>
         </div>
